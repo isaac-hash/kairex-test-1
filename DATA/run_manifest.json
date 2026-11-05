@@ -1,0 +1,145 @@
+{
+  "created_utc": "2026-11-05T00:46:19+00:00",
+  "random_seed": 42,
+  "train_end": "2025-05-31",
+  "val_end": "2025-11-30",
+  "python": "3.15.2",
+  "pandas": "3.1.1",
+  "numpy": "2.5.4",
+  "source_files": {
+    "PSS_SCALP_XAUUSDm...mss h4 buy and sell,4 years.csv": "64621afcc31f04a547de961edafad74b6976a9b9bf265544a566953fc7c56013",
+    "PSS_SCALP_XAUUSDm...5 years rule based.csv": "36a1170b56b1dc6ba7e35b37bd5d93960bff1c4497863912760ad316f892e633"
+  },
+  "hash_4yr": "64621afcc31f04a547de961edafad74b6976a9b9bf265544a566953fc7c56013",
+  "hash_5yr": "36a1170b56b1dc6ba7e35b37bd5d93960bff1c4497863912760ad316f892e633",
+  "n_rows": {
+    "4yr": 3040,
+    "5yr": 980
+  },
+  "n_features": {
+    "entry_known": 63,
+    "usable": 58
+  },
+  "feature_cols": [
+    "signal_type",
+    "signal",
+    "direction",
+    "zone_timeframe",
+    "entry_timeframe",
+    "entry_day",
+    "open_hour",
+    "sl_pips",
+    "tp_pips",
+    "spread_pips",
+    "risk_pts",
+    "spread_pts",
+    "zone_age",
+    "zone_size_pips",
+    "zone_touches",
+    "body_size_ratio",
+    "engulf_depth",
+    "atr_m5_pips",
+    "atr_m15_pips",
+    "atr_h1_pips",
+    "atr_h4_pips",
+    "sl_to_atr_m15",
+    "sl_to_atr_h1",
+    "zone_to_atr_m15",
+    "atr_h1_pctile",
+    "day_range_to_adr",
+    "dist_ema50_h1_atr",
+    "dist_ema200_h1_atr",
+    "dist_ema50_h4_atr",
+    "dist_ema200_h4_atr",
+    "slope_ema50_h1_atr",
+    "slope_ema50_h4_atr",
+    "align_ema50_h1",
+    "align_ema50_h4",
+    "dist_pdh_R",
+    "dist_pdl_R",
+    "dist_dayhigh_R",
+    "dist_daylow_R",
+    "dist_round_R",
+    "ec_range_atr",
+    "ec_close_loc",
+    "ec_upper_wick",
+    "ec_lower_wick",
+    "ec_tickvol_ratio",
+    "rsi_m5",
+    "rsi_m15",
+    "mom5_atr",
+    "consec_dir_bars",
+    "mins_since_london",
+    "mins_since_ny",
+    "day_of_month",
+    "prev_R_1",
+    "prev_R_2",
+    "prev_R_3",
+    "trades_today_before",
+    "open_pos_other",
+    "mins_since_last_entry",
+    "streak_losses"
+  ],
+  "dropped_features": [
+    "dist_opp_zone_R",
+    "planned_rr",
+    "risk_pct_used",
+    "server_gmt_offset_h",
+    "streak_mode"
+  ],
+  "purged_straddlers": {
+    "4yr": 5,
+    "5yr": 2
+  },
+  "lag_check": {
+    "4-yr": {
+      "unrealised": {
+        "prev_R_1": 0,
+        "prev_R_2": 0,
+        "prev_R_3": 0
+      },
+      "n": 3045,
+      "matched": 3033,
+      "residuals": 12,
+      "max_diff_R": 1.064,
+      "overlap": 2125
+    },
+    "5-yr": {
+      "unrealised": {
+        "prev_R_1": 0,
+        "prev_R_2": 0,
+        "prev_R_3": 0
+      },
+      "n": 982,
+      "matched": 979,
+      "residuals": 3,
+      "max_diff_R": 0.0029999999999998916,
+      "overlap": 538
+    }
+  },
+  "outcomes": {
+    "4yr": {
+      "trades": 3045,
+      "resolved": 3045,
+      "win_rate": 0.3605911330049261,
+      "n_wins": 1098,
+      "expectancy_R": 0.07457733990147784,
+      "profit_factor": 1.1149592052968063,
+      "base_rate_1R": 0.5083743842364532
+    },
+    "5yr": {
+      "trades": 982,
+      "resolved": 982,
+      "win_rate": 0.37169042769857435,
+      "n_wins": 365,
+      "expectancy_R": 0.19676985743380856,
+      "profit_factor": 1.3116480113544726,
+      "base_rate_1R": 0.5173116089613035
+    }
+  },
+  "outputs": {
+    "base_ml_4yr_processed.csv": "e9f11bd84756c99bb9554146fbd2fe9acce5d6e79d3da1f323b723ea4fe993db",
+    "rulebased_5yr_processed.csv": "b1b0c11de826d7829f7373f3ae0c0a533060c44f861eb0c2ae5338fa95eea322",
+    "00_split_overview.png": "a05a09b60accc1d11f87962a37d1cca6b1a8cb06138d7d9cb24872de2b755bec"
+  }
+}
